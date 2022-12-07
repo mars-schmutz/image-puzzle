@@ -24,7 +24,7 @@ class ViewController: NSViewController {
     }
     
     @IBAction func shuffleTiles(_ sender: NSButton) {
-        let _ = self.tiles.shuffleTiles()
+        self.tiles.initial_layout = self.tiles.shuffleTiles()
     }
     
     @IBAction func restartCurrent(_ sender: NSButton) {

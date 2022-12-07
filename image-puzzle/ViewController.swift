@@ -24,7 +24,11 @@ class ViewController: NSViewController {
     }
     
     @IBAction func shuffleTiles(_ sender: NSButton) {
-        self.tiles.shuffleTiles()
+        let _ = self.tiles.shuffleTiles()
+    }
+    
+    @IBAction func restartCurrent(_ sender: NSButton) {
+        self.tiles.restartGame()
     }
     
     override var representedObject: Any? {

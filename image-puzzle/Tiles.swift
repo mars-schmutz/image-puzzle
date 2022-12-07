@@ -23,6 +23,7 @@ class Tiles {
     var winnerPos: [[NSRect]] = []
     var world: NSView? = nil
     var empty: NSRect? = nil // empty space frame
+    var initial_layout: [NSRect] = []
     
     let nc = NotificationCenter.default
     
@@ -93,10 +94,10 @@ class Tiles {
             }
         }
         
-        shuffleTiles()
+        initial_layout = shuffleTiles()
     }
     
-    func shuffleTiles() {
+    func shuffleTiles() -> [NSRect] {
         let flattened_tiles: [Tile] = Array(self.tiles.joined())
         var flattened_frames: [NSRect] = Array(self.winnerPos.joined())
         flattened_frames.shuffle()
@@ -105,12 +106,21 @@ class Tiles {
         for ft in 0..<flattened_tiles.count {
             flattened_tiles[ft].frame = flattened_frames[ft]
         }
+        return flattened_frames
+    }
+    
+    func restartGame() {
+        let flattened_tiles: [Tile] = Array(self.tiles.joined())
+        for ft in 0..<flattened_tiles.count {
+            flattened_tiles[ft].frame = initial_layout[ft]
+        }
+        empty = NSMakeRect(200.0, 200.0, tW, tH)
     }
     
     func replaceImg(prefix: String) {
         for r in 0..<tiles.count {
             for t in 0..<tiles[r].count {
-                var img_num = tiles[r][t].identifier?.rawValue.last!
+                let img_num = tiles[r][t].identifier?.rawValue.last!
                 let name: String = "\(prefix)\(img_num!)"
                 print(name)
                 let img = NSImage(named: name)

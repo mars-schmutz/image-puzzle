@@ -9,20 +9,15 @@ import Foundation
 import Cocoa
 
 class Tile: NSImageView {
-    var tiles: Tiles! // reference to parent class (NOT new Tiles() instance)
+    var tiles: Tiles! // reference to parent class (not new Tiles() instance)
     
     override func mouseUp(with event: NSEvent) {
         if !canImove() {
             return
         }
         let myFrame = self.frame
-//        print("my frame: \(myFrame.minX), \(myFrame.minY)")
-//        print("empty frame: \(self.tiles.empty?.minX), \(self.tiles.empty?.minY)")
-//        print("")
         self.frame = self.tiles.empty!
         self.tiles.empty = myFrame
-        // check for win?
-//        print("ME: \(self.identifier)")
         print(self.tiles.checkWin())
     }
     

@@ -38,7 +38,6 @@ class Tiles {
             tiles.append(row)
         }
         
-        // remove last tile from last row for empty space
         tiles[tiles.count - 1].removeLast()
         empty = NSMakeRect(200.0, 200.0, tW, tH)
     }
@@ -67,13 +66,8 @@ class Tiles {
                 let y: CGFloat = (100 * CGFloat(r)).truncatingRemainder(dividingBy: CGFloat(300.0))
                 let frame = NSMakeRect(x, y, tW, tH)
                 row.append(frame)
-//                tiles[row][t].frame = NSMakeRect(x, y, tW, tH)
-//                world?.addSubview(tiles[row][t])
-//
-//                print("Tile \(tiles[row][t].identifier): \(x), \(y)")
             }
             winnerPos.append(row)
-//            print("")
         }
         
         for row in 0..<tiles.count {
@@ -87,7 +81,7 @@ class Tiles {
     }
     
     func shuffleTiles() {
-        var flattened_tiles: [Tile] = Array(self.tiles.joined())
+        let flattened_tiles: [Tile] = Array(self.tiles.joined())
         var flattened_frames: [NSRect] = Array(self.winnerPos.joined())
         flattened_frames.shuffle()
         
@@ -97,7 +91,7 @@ class Tiles {
     }
     
     func almostWin() {
-        var flattened_tiles: [Tile] = Array(self.tiles.joined())
+        let flattened_tiles: [Tile] = Array(self.tiles.joined())
         var flattened_frames: [NSRect] = Array(self.winnerPos.joined())
         
         for ft in 0..<flattened_tiles.count - 1 {
@@ -109,12 +103,6 @@ class Tiles {
         var win = true
         for r in 0..<tiles.count {
             for t in 0..<tiles[r].count {
-//                print("Tile \(tiles[r][t].identifier):")
-//                print("Actual:")
-//                print("\(tiles[r][t].frame.minX), \(tiles[r][t].frame.minY)")
-//                print("Expected:")
-//                print("\(winnerPos[r][t].minX), \(winnerPos[r][t].minY)")
-//                print("")
                 let myX: CGFloat = tiles[r][t].frame.minX
                 let myY: CGFloat = tiles[r][t].frame.minY
                 let expectedX: CGFloat = winnerPos[r][t].minX

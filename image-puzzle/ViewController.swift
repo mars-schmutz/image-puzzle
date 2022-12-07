@@ -14,15 +14,17 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         let world = self.view.subviews[0]
         tiles.world = world
         tiles.setupTiles()
-//        tiles.checkWin()
     }
     
     @IBAction func rulesToggled(_ sender: Any) {
         tiles.rules = rulesSwitch.state.rawValue
+    }
+    
+    @IBAction func shuffleTiles(_ sender: NSButton) {
+        self.tiles.shuffleTiles()
     }
     
     override var representedObject: Any? {

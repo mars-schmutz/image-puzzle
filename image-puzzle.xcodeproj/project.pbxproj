@@ -14,7 +14,6 @@
 		218E7E772937D50A00DD5011 /* image_puzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E7E762937D50A00DD5011 /* image_puzzleTests.swift */; };
 		218E7E812937D50A00DD5011 /* image_puzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E7E802937D50A00DD5011 /* image_puzzleUITests.swift */; };
 		218E7E832937D50A00DD5011 /* image_puzzleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E7E822937D50A00DD5011 /* image_puzzleUITestsLaunchTests.swift */; };
-		21E5B6AA293E5C5F00A9B324 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B6A9293E5C5F00A9B324 /* GameViewController.swift */; };
 		21E5B6AC293E5CA400A9B324 /* Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B6AB293E5CA400A9B324 /* Tiles.swift */; };
 		21E5B6AE293E70C200A9B324 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E5B6AD293E70C200A9B324 /* Tile.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +47,6 @@
 		218E7E7C2937D50A00DD5011 /* image-puzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "image-puzzleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		218E7E802937D50A00DD5011 /* image_puzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_puzzleUITests.swift; sourceTree = "<group>"; };
 		218E7E822937D50A00DD5011 /* image_puzzleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_puzzleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		21E5B6A9293E5C5F00A9B324 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		21E5B6AB293E5CA400A9B324 /* Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tiles.swift; sourceTree = "<group>"; };
 		21E5B6AD293E70C200A9B324 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,7 +104,6 @@
 				218E7E682937D50A00DD5011 /* Assets.xcassets */,
 				218E7E6A2937D50A00DD5011 /* Main.storyboard */,
 				218E7E6D2937D50A00DD5011 /* image_puzzle.entitlements */,
-				21E5B6A9293E5C5F00A9B324 /* GameViewController.swift */,
 				21E5B6AB293E5CA400A9B324 /* Tiles.swift */,
 				21E5B6AD293E70C200A9B324 /* Tile.swift */,
 			);
@@ -261,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				218E7E672937D50800DD5011 /* ViewController.swift in Sources */,
-				21E5B6AA293E5C5F00A9B324 /* GameViewController.swift in Sources */,
 				21E5B6AE293E70C200A9B324 /* Tile.swift in Sources */,
 				218E7E652937D50800DD5011 /* AppDelegate.swift in Sources */,
 				21E5B6AC293E5CA400A9B324 /* Tiles.swift in Sources */,

@@ -14,9 +14,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        
-//        var tiles = Tiles()
-//        print(tiles.tiles)
     }
 
     @IBAction func useMountain(_ sender: NSMenuItem) {

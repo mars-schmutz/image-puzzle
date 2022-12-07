@@ -174,6 +174,15 @@
                                     <action selector="restartCurrent:" target="XfG-lQ-9wD" id="LrY-J2-OiR"/>
                                 </connections>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkh-bU-FtG">
+                                <rect key="frame" x="19" y="44" width="156" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="You Win!" id="0lo-Xk-XZH">
+                                    <font key="font" size="32" name="Arial-Black"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="dZq-FL-tmA" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="iWq-Hy-2ST"/>
@@ -182,6 +191,7 @@
                     </view>
                     <connections>
                         <outlet property="rulesSwitch" destination="vQQ-2i-PmW" id="ulh-xL-MUj"/>
+                        <outlet property="winMsg" destination="gkh-bU-FtG" id="KhD-gb-u6D"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

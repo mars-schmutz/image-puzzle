@@ -18,7 +18,7 @@ class Tile: NSImageView {
         let myFrame = self.frame
         self.frame = self.tiles.empty!
         self.tiles.empty = myFrame
-        print(self.tiles.checkWin())
+        let _ = self.tiles.checkWin()
     }
     
     func canImove() -> Bool {

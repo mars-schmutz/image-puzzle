@@ -51,12 +51,10 @@ class Tiles {
     
     @objc func useMountain() {
         replaceImg(prefix: "test_split_T")
-        print("images replaced")
     }
     
     @objc func usePhone() {
         replaceImg(prefix: "phone")
-        print("images replaced")
     }
     
     func createTiles() {
@@ -122,7 +120,6 @@ class Tiles {
             for t in 0..<tiles[r].count {
                 let img_num = tiles[r][t].identifier?.rawValue.last!
                 let name: String = "\(prefix)\(img_num!)"
-                print(name)
                 let img = NSImage(named: name)
                 let sz = NSSize(width: 100, height: 100)
                 img?.size = sz
@@ -147,6 +144,7 @@ class Tiles {
         }
         if (win) {
             print("YOU WON!!1!")
+            nc.post(name: Notification.Name("winnerWinner"), object: nil)
         }
         return win
     }

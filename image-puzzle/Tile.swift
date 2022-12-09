@@ -15,9 +15,12 @@ class Tile: NSImageView {
         if !canImove() {
             return
         }
-        let myFrame = self.frame
-        self.frame = self.tiles.empty!
-        self.tiles.empty = myFrame
+        NSAnimationContext.runAnimationGroup({ ctx in
+            ctx.duration = 0.5
+            let myFrame = self.frame
+            self.animator().frame = self.tiles.empty!
+            self.tiles.empty = myFrame
+        })
         let _ = self.tiles.checkWin()
     }
     

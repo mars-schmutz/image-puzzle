@@ -47,6 +47,7 @@ class Tiles {
         // set up listeners
         nc.addObserver(self, selector: #selector(useMountain), name: Notification.Name("useMountain"), object: nil)
         nc.addObserver(self, selector: #selector(usePhone), name: Notification.Name("usePhone"), object: nil)
+        nc.addObserver(self, selector: #selector(useTNG), name: Notification.Name("useTNG"), object: nil)
     }
     
     @objc func useMountain() {
@@ -55,6 +56,10 @@ class Tiles {
     
     @objc func usePhone() {
         replaceImg(prefix: "phone")
+    }
+    
+    @objc func useTNG() {
+        replaceImg(prefix: "tng")
     }
     
     func createTiles() {
@@ -143,7 +148,7 @@ class Tiles {
             }
         }
         if (win) {
-            print("YOU WON!!1!")
+//            print("YOU WON!!1!")
             nc.post(name: Notification.Name("winnerWinner"), object: nil)
         }
         return win

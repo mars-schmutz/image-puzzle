@@ -19,6 +19,7 @@ class Tile: NSImageView {
             ctx.duration = 0.5
             let myFrame = self.frame
             self.animator().frame = self.tiles.empty!
+            self.layer?.zPosition = 10
             self.tiles.empty = myFrame
         })
         let _ = self.tiles.checkWin()

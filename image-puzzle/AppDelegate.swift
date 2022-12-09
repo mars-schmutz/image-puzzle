@@ -24,6 +24,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         nc.post(name: Notification.Name("usePhone"), object: nil)
     }
     
+    @IBAction func useTNG(_ sender: NSMenuItem) {
+        nc.post(name: Notification.Name("useTNG"), object: nil)
+    }
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }

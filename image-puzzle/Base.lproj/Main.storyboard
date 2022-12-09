@@ -71,6 +71,12 @@
                                                 <action selector="usePhone:" target="Voe-Tx-rLC" id="URr-Cn-ZPd"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Star Trek: TNG" id="koX-mB-QFm">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="useTNG:" target="Voe-Tx-rLC" id="5dQ-2h-I3m"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>

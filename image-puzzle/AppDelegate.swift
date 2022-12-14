@@ -16,6 +16,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
     }
     
+    @IBAction func cheat(_ sender: NSMenuItem) {
+        nc.post(name: Notification.Name("autosolve"), object: nil)
+    }
+    
     @IBAction func randomImg(_ sender: NSMenuItem) {
         nc.post(name: Notification.Name("useRandom"), object: nil)
     }

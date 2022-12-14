@@ -91,9 +91,10 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="image-puzzle Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Autosolve" id="Ibc-i8-f5E">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                                <action selector="cheat:" target="Voe-Tx-rLC" id="MDv-J8-qQO"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -109,7 +110,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="-1" y="-133"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">

@@ -49,6 +49,8 @@ class Tiles {
         nc.addObserver(self, selector: #selector(useMountain), name: Notification.Name("useMountain"), object: nil)
         nc.addObserver(self, selector: #selector(usePhone), name: Notification.Name("usePhone"), object: nil)
         nc.addObserver(self, selector: #selector(useTNG), name: Notification.Name("useTNG"), object: nil)
+        
+        nc.addObserver(self, selector: #selector(autosolve), name: Notification.Name("autosolve"), object: nil)
     }
     
     @objc func useRandom() {
@@ -159,5 +161,21 @@ class Tiles {
             nc.post(name: Notification.Name("winnerWinner"), object: nil)
         }
         return win
+    }
+    
+    @objc func autosolve() {
+        for r in 0..<tiles.count {
+            for t in 0..<tiles[r].count {
+                let me: Tile = tiles[r][t]
+                let winFrame: NSRect = winnerPos[r][t]
+                
+                NSAnimationContext.runAnimationGroup({ ctx in
+                    ctx.duration = 0.5
+                    me.animator().frame = winFrame
+                })
+            }
+        }
+        
+        let _ = checkWin()
     }
 }

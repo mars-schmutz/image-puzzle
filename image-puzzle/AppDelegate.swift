@@ -15,7 +15,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
-
+    
+    @IBAction func randomImg(_ sender: NSMenuItem) {
+        nc.post(name: Notification.Name("useRandom"), object: nil)
+    }
+    
     @IBAction func useMountain(_ sender: NSMenuItem) {
         nc.post(name: Notification.Name("useMountain"), object: nil)
     }

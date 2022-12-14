@@ -45,9 +45,16 @@ class Tiles {
         empty = NSMakeRect(200.0, 200.0, tW, tH)
         
         // set up listeners
+        nc.addObserver(self, selector: #selector(useRandom), name: Notification.Name("useRandom"), object: nil)
         nc.addObserver(self, selector: #selector(useMountain), name: Notification.Name("useMountain"), object: nil)
         nc.addObserver(self, selector: #selector(usePhone), name: Notification.Name("usePhone"), object: nil)
         nc.addObserver(self, selector: #selector(useTNG), name: Notification.Name("useTNG"), object: nil)
+    }
+    
+    @objc func useRandom() {
+        let imgs = ["test_split_T", "phone", "tng"]
+        let randomIndex = Int(arc4random_uniform(UInt32(imgs.count)))
+        replaceImg(prefix: imgs[randomIndex])
     }
     
     @objc func useMountain() {

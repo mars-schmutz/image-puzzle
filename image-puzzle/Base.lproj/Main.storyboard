@@ -59,6 +59,13 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Images" id="6Bq-e1-ldy">
                                     <items>
+                                        <menuItem title="Random" id="2Sv-C7-2Kh">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="randomImg:" target="Voe-Tx-rLC" id="KOa-Rk-aeK"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="EXX-Rb-Smd"/>
                                         <menuItem title="Mountain" id="doy-TL-jPR">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>

@@ -91,7 +91,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="Autosolve" id="Ibc-i8-f5E">
+                                        <menuItem title="Cheat" id="Ibc-i8-f5E">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="cheat:" target="Voe-Tx-rLC" id="MDv-J8-qQO"/>

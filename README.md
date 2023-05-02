@@ -21,4 +21,5 @@ An example of a completed game.
 
 ![image options](./image_options.png)
 ![cheat](./cheat.png)
+
 The list of image options and cheat button are located in the application menu.

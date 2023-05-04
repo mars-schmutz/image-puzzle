@@ -1,6 +1,6 @@
 # Image Puzzle
 
-This is a sliding image puzzle for my Application Development class final. The images were created by me in Blender and split into tiles in Photoshop.
+This is a sliding image puzzle for my Application Development class final project. It is written in Swift and developed as a macOS application. I had some previous experience developing iOS apps, but this was my first macOS desktop application. It was a little bit of a challenge to get things set up and figure out how to structure the project, but I learned a lot throughout the process. The images were created by me in Blender.
 
 ## Features
 
@@ -13,13 +13,12 @@ This is a sliding image puzzle for my Application Development class final. The i
 
 ## Screenshots
 
-![scrambled image](./scrambled.png)
 The beginning game screen.
+![scrambled image](./scrambled.png)
 
-![Solved puzzle](./win.png)
 An example of a completed game.
-
-![image options](./image_options.png)
-![cheat](./cheat.png)
+![Solved puzzle](./win.png)
 
 The list of image options and cheat button are located in the application menu.
+![image options](./image_options.png)
+![cheat](./cheat.png)
